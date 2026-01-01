@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../componets/Navbar'
 import Sidebar from '../componets/Sidebar'
 import VendorLogin from '../componets/forms/VendorLogin'
+import Vendorregister from '../componets/forms/Vendorregister'
 
 const LandingPage = () => {
   return (
@@ -9,7 +10,8 @@ const LandingPage = () => {
         <Navbar/>
         <div className='section'>
             <Sidebar/>
-        <VendorLogin/>
+        {/* <VendorLogin/> */}
+        <Vendorregister/>
         </div>
     </div>
   )
