@@ -3,6 +3,8 @@ import Navbar from '../componets/Navbar'
 import Sidebar from '../componets/Sidebar'
 import VendorLogin from '../componets/forms/VendorLogin'
 import Vendorregister from '../componets/forms/Vendorregister'
+import AddFirm from '../componets/forms/Addfirm'
+import AddProduct from '../componets/forms/Addproduct'
 
 const LandingPage = () => {
   return (
@@ -11,7 +13,9 @@ const LandingPage = () => {
         <div className='section'>
             <Sidebar/>
         {/* <VendorLogin/> */}
-        <Vendorregister/>
+        {/* <Vendorregister/> */}
+        {/* <AddFirm/> */}
+        {/* <AddProduct/> */}
         </div>
     </div>
   )
