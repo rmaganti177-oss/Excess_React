@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Sidebar = () => {
+const Sidebar = ({showfirm , showProduct}) => {
   return (
      <div className='sidebarsection'>
         <ul>
-          <li>Add Firm</li>
-          <li>Add Product</li>
+          <li onClick={showfirm}>Add Firm</li>
+          <li onClick={showProduct}>Add Product</li>
           <li>All Products</li>
           <li>user details</li>
         </ul>

@@ -1,253 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Roboto", sans-serif; } body { background-color: #f4f6f8; } /* ---------- TOP NAVBAR ---------- */ .Mark { display: flex; height: 80px; justify-content: space-between; background-color: brown; align-items: center; color: aliceblue; padding: 0 20px; font-size: large; box-shadow: 5px 6px 37px 5px #000000; } /* ---------- MAIN LAYOUT ---------- */ .section { display: flex; } /* ---------- SIDEBAR ---------- */ .sidebarsection { width: 15%; height: calc(100vh - 80px); background-color: burlywood; padding: 20px; } .sidebarsection ul { padding: 0; } .sidebarsection ul li { list-style: none; margin-bottom: 20px; font-size: medium; cursor: pointer; } /* ---------- LOGIN SECTION ---------- */ .Loginsection { width: 85%; height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center; background-color: #f5f6fa; } /* ---------- LOGIN CARD ---------- */ .authform { width: 350px; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15); } .authform h3 { text-align: center; margin-bottom: 25px; color: #333; } /* ---------- LOGIN INPUTS ---------- */ .authform label { display: block; margin-bottom: 5px; font-weight: 500; color: #555; } .authform input { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; font-size: 14px; } .authform input:focus { outline: none; border-color: brown; } /* ---------- LOGIN BUTTON ---------- */ .btnsubmit { text-align: center; } .btnsubmit button { width: 100%; padding: 10px; background-color: brown; border: none; color: white; font-size: 15px; border-radius: 5px; cursor: pointer; transition: 0.3s ease; } .btnsubmit button:hover { background-color: #8b0000; } /* ---------- REGISTER SECTION ---------- */ .regsitersection { width: 100%; height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center; background-color: #f5f6fa; } /* ---------- REGISTER FORM ---------- */ .registerform { width: 380px; background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0px 10px 30px -5px #00000026; } .registerform h3 { text-align: center; margin-bottom: 25px; color: #333; } .registerform label { display: block; margin-bottom: 5px; font-weight: 500; color: #555; } .registerform input { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; font-size: 14px; } .registerform input:focus { outline: none; border-color: brown; } /* ---------- REGISTER BUTTON ---------- */ .btnrsubmit { text-align: center; } .btnrsubmit button { width: 100%; padding: 10px; background-color: brown; border: none; color: white; font-size: 15px; border-radius: 5px; cursor: pointer; transition: 0.3s ease; } .btnrsubmit button:hover { background-color: #8b0000; }
 
-/* ---------- GLOBAL RESET ---------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-}
-
-body {
-    background-color: #f4f6f8;
-}
-
-/* ---------- TOP NAVBAR ---------- */
-.Mark {
-    display: flex;
-    height: 80px;
-    justify-content: space-between;
-    background-color: brown;
-    align-items: center;
-    color: aliceblue;
-    padding: 0 20px;
-    font-size: large;
-    box-shadow: 5px 6px 37px 5px #000000;
-}
-
-/* ---------- MAIN LAYOUT ---------- */
-.section {
-    display: flex;
-}
-
-/* ---------- SIDEBAR ---------- */
-.sidebarsection {
-    width: 15%;
-    height: calc(100vh - 80px);
-    background-color: burlywood;
-    padding: 20px;
-}
-
-.sidebarsection ul {
-    padding: 0;
-}
-
-.sidebarsection ul li {
-    list-style: none;
-    margin-bottom: 20px;
-    font-size: medium;
-    cursor: pointer;
-}
-
-/* ---------- LOGIN SECTION ---------- */
-.Loginsection {
-    width: 85%;
-    height: calc(100vh - 80px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f5f6fa;
-}
-
-/* ---------- LOGIN CARD ---------- */
-.authform {
-    width: 350px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.authform h3 {
-    text-align: center;
-    margin-bottom: 25px;
-    color: #333;
-}
-
-/* ---------- LOGIN INPUTS ---------- */
-.authform label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
-    color: #555;
-}
-
-.authform input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-.authform input:focus {
-    outline: none;
-    border-color: brown;
-}
-
-/* ---------- LOGIN BUTTON ---------- */
-.btnsubmit {
-    text-align: center;
-}
-
-.btnsubmit button {
-    width: 100%;
-    padding: 10px;
-    background-color: brown;
-    border: none;
-    color: white;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.btnsubmit button:hover {
-    background-color: #8b0000;
-}
-
-/* ---------- REGISTER SECTION ---------- */
-.regsitersection {
-    width: 100%;
-    height: calc(100vh - 80px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f5f6fa;
-}
-
-/* ---------- REGISTER FORM ---------- */
-.registerform {
-    width: 380px;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px -5px #00000026;
-}
-
-.registerform h3 {
-    text-align: center;
-    margin-bottom: 25px;
-    color: #333;
-}
-
-.registerform label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
-    color: #555;
-}
-
-.registerform input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-.registerform input:focus {
-    outline: none;
-    border-color: brown;
-}
-
-/* ---------- REGISTER BUTTON ---------- */
-.btnrsubmit {
-    text-align: center;
-}
-
-.btnrsubmit button {
-    width: 100%;
-    padding: 10px;
-    background-color: brown;
-    border: none;
-    color: white;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.btnrsubmit button:hover {
-    background-color: #8b0000;
-}
-
-/* =====================================================
-   ADD FIRM FORM STYLES (NEW – MERGED SAFELY)
-   ===================================================== */
-
-/* Container */
 .firmSection {
     width: 85%;
-    height: 40%;
+    min-height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 30px;
     background-color: #f5f6fa;
 }
 
-/* Form card */
+
 .tableForm {
+    width: 520px;
     background-color: #ffffff;
-    width: 420px;
-    padding: 25px 30px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 25px 35px;
+    border: 1px solid #ccc;
 }
 
-/* Labels */
+
+.formTitle {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
 .tableForm label {
     display: block;
-    margin-top: 15px;
-    margin-bottom: 6px;
+    margin-top: 12px;
+    margin-bottom: 5px;
     font-weight: 500;
-    color: #333;
 }
 
-/* Inputs */
+
 .tableForm input[type="text"],
 .tableForm input[type="file"] {
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+
+.checkboxRow {
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+.checkItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-size: 14px;
 }
 
-.tableForm input:focus {
-    outline: none;
-    border-color: brown;
-}
 
-/* Submit button */
 .btnSubmit {
-    margin-top: 25px;
     text-align: center;
+    margin-top: 25px;
 }
 
 .btnSubmit button {
-    padding: 10px 35px;
-    background-color: brown;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
+    padding: 6px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #888;
+    background-color: #f1f1f1;
     cursor: pointer;
-    transition: 0.3s ease;
 }
 
 .btnSubmit button:hover {
-    background-color: #8b0000;
+    background-color: #e0e0e0;
 }
+

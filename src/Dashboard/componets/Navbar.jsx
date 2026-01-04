@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({showlogin , showRegister}) => {
+  
   return (
     <div className='Mark'>
      
@@ -8,8 +9,8 @@ const Navbar = () => {
         Vendor Dashboard
      </div>
         <div className="wrap">
-            <span>Login /</span>
-            <span>Register</span>
+            <span onClick={showlogin}>Login /</span>
+            <span onClick={showRegister}>Register</span>
      </div>
     </div>
   )

@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const AddFirm = () => {
   return (
     <div className="firmSection">
       <form className="tableForm">
-        <h2>Add Firm</h2>
+        <h3 className="formTitle">Add Firm</h3>
+
         <label>Firm Name</label>
         <input type="text" />
 
@@ -12,13 +13,39 @@ const AddFirm = () => {
         <input type="text" />
 
         <label>Category</label>
-        <input type="text" />
-
-        <label>Region</label>
-        <input type="text" />
+        <div className="checkboxRow">
+          <label className="checkItem">
+            Veg
+            <input type="checkbox" />
+          </label>
+          <label className="checkItem">
+            Non-Veg
+            <input type="checkbox" />
+          </label>
+        </div>
 
         <label>Offer</label>
         <input type="text" />
+
+        <label>Region</label>
+        <div className="checkboxRow">
+          <label className="checkItem">
+            South Indian
+            <input type="checkbox" />
+          </label>
+          <label className="checkItem">
+            North-Indian
+            <input type="checkbox" />
+          </label>
+          <label className="checkItem">
+            Chinese
+            <input type="checkbox" />
+          </label>
+          <label className="checkItem">
+            Bakery
+            <input type="checkbox" />
+          </label>
+        </div>
 
         <label>Firm Image</label>
         <input type="file" />
@@ -26,7 +53,6 @@ const AddFirm = () => {
         <div className="btnSubmit">
           <button type="submit">Submit</button>
         </div>
-
       </form>
     </div>
   );
